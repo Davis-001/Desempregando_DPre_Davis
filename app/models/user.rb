@@ -5,4 +5,8 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   has_one :company
   has_many :applicants
+  def profile
+      p = ProfileUser.find_by(:user_id => self.id)
+      Profile.find_by(:id => p.profile_id) 
+  end
 end
