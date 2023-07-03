@@ -45,9 +45,9 @@ gem 'ransack'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Colocados neste projeto
-  gem 'kaminari'
-  gem 'pry'
   gem 'pry-rails'
+	gem 'pry-remote'
+	gem 'pry-byebug'
   gem 'awesome_print'
   gem 'rspec-rails'
   # gem 'solargraph'

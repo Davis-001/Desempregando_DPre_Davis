@@ -4,6 +4,7 @@ class CompaniesController < ApplicationController
   end
 
   def edit
+    binding.pry
     @company = current_user.company
   end
 
